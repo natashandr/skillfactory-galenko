@@ -1,0 +1,21 @@
+    margin: 0;
+}
+
+.gallery {
+    box-shadow: 5px 5px 10px grey;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.gallery::nth-child(odd); {
+    flex-direction: row;
+}
+
+.gallery::nth-child(even); {
+    flex-direction: column;
+}
+
+.gallery > img {
+    width: 200px;
+}
